@@ -3,10 +3,9 @@ const cursorSpan = document.querySelector(".cursor");
 const scrollIndicator = document.querySelector(".scroll-indicator");
 const content = document.querySelector(".content");
 const textArray = [
-  "frontend developer",
-  "backend developer",
-  "full stack",
-  "Shashank Padwal",
+  "Digital Marketer",
+  "Wordpress Developer",
+  "Vinayak Parab",
 ];
 const typingDelay = 100;
 const erasingDelay = 50;
