@@ -1,0 +1,126 @@
+html,
+body {
+  height: 100%;
+  color: gray;
+  font-family: Helvetica;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: $primary !important;
+  }
+}
+.p-short {
+  font-size: 20px;
+  padding: 40px 0;
+}
+.menubar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 33%;
+  max-width: 300px;
+  height: 100%;
+  background: $primary;
+  .nav-item {
+    letter-spacing: 5px;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    &:hover {
+      transform: scale(1.1);
+      color: white !important;
+    }
+  }
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow: scroll;
+  color: gray;
+  @media (max-width: 500px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+hr {
+  margin-top: 0px;
+}
+.title {
+  font-size: 70px;
+  color: black;
+  @media (max-width: 1060px) {
+    font-size: 50px;
+  }
+  @media (max-width: 600px) {
+    font-size: 40px;
+  }
+  @media (max-width: 500px) {
+    font-size: 25px;
+  }
+}
+.title-sm {
+  margin-top: 20px;
+  font-size: 50px;
+  color: black;
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
+  @media (max-width: 500px) {
+    font-size: 25px;
+  }
+}
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  border-bottom: solid #eee 1px;
+}
+
+.typed {
+  font-weight: normal;
+  color: $primary;
+}
+.cursor {
+  display: inline-block;
+  background-color: gray;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.cursor.typing {
+  animation: none;
+}
+.social-div {
+  font-size: 50px;
+}
+
+@keyframes blink {
+  0% {
+    background-color: gray;
+  }
+  49% {
+    background-color: gray;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: gray;
+  }
+}
