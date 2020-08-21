@@ -7,6 +7,7 @@ const textArray = [
   "Digital Marketer.",
   "Wordpress Developer.",
   "Video Editor.",
+  "Photo Editor.",
 ];
 const typingDelay = 100;
 const erasingDelay = 50;
